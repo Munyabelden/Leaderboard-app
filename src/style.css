@@ -24,6 +24,12 @@ main {
   gap: 20px;  
 }
 
+button {
+  cursor: pointer;
+  width: fit-content;
+  padding: 5px 8px;  
+}
+
 .results {
   display: block;
   width: 450px;
@@ -32,7 +38,7 @@ main {
 .results-title {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 25%;
   margin-bottom: 15px;
 }
 

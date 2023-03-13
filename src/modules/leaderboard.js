@@ -14,6 +14,14 @@ const lead = [
     {
         name: 'Shayne',
         score: '56'
+    },
+    {
+        name: 'Nathan',
+        score: '79'
+    },
+    {
+        name: 'Anne',
+        score: '68'
     }
 ];
 

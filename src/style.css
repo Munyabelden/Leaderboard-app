@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a { text-decoration: none; }
+
+body {
+  margin-top: 60px;
+  margin-left: 40px;  
+}
+
+.title {
+  margin-bottom: 30px;  
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;  
+}
+
+.results {
+  display: block;
+  width: 450px;
+}
+
+.results-title {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.results-table {
+  display: block;
+  border: 2px solid rgb(22, 23, 31);
+  border-radius: 5px;
+  width: fit-content;
+  margin: -5px;
+}
+
+.results-table tr td {
+  width: 350px;
+  padding: 5px;
+}
+
+.results-table tr:nth-child(odd) {
+  background: rgb(171, 171, 175);
+}
+
+.form-submit h2 {
+  margin-bottom: 15px;
+}
+
+.app-form {
+  display: flex;
+  flex-direction: column;
+  justify-content:  flex-end;
+  align-items: end;
+  gap: 10px;
+}
+
+.app-form input {
+  padding:  6px;
+}
+
+.app-form #submit {
+  width: fit-content;
+}

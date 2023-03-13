@@ -56,7 +56,7 @@ button {
 }
 
 .results-table tr:nth-child(odd) {
-  background: rgb(171, 171, 175);
+  background: rgb(205, 205, 211);
 }
 
 .form-submit h2 {

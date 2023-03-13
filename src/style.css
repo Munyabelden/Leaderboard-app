@@ -11,23 +11,23 @@ a { text-decoration: none; }
 
 body {
   margin-top: 60px;
-  margin-left: 40px;  
+  margin-left: 40px;
 }
 
 .title {
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 }
 
 main {
   display: flex;
   flex-direction: row;
-  gap: 20px;  
+  gap: 20px;
 }
 
 button {
   cursor: pointer;
   width: fit-content;
-  padding: 5px 8px;  
+  padding: 5px 8px;
 }
 
 .results {
@@ -66,13 +66,13 @@ button {
 .app-form {
   display: flex;
   flex-direction: column;
-  justify-content:  flex-end;
+  justify-content: flex-end;
   align-items: end;
   gap: 10px;
 }
 
 .app-form input {
-  padding:  6px;
+  padding: 6px;
 }
 
 .app-form #submit {

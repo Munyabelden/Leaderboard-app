@@ -1,4 +1,3 @@
-;
 export default class leaderboard {
     constructor(url) {
         this.url = url

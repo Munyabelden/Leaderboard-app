@@ -1,45 +1,42 @@
-const lead = [
-    {
-        name: 'Tatenda',
-        score: '100'
-    },
-    {
-        name: 'Chad',
-        score: '74'
-    }, 
-    {
-        name: 'Leasel',
-        score: '63'
-    },
-    {
-        name: 'Shayne',
-        score: '56'
-    },
-    {
-        name: 'Nathan',
-        score: '79'
-    },
-    {
-        name: 'Anne',
-        score: '68'
+;
+export default class leaderboard {
+    constructor(url) {
+        this.url = url
     }
-];
 
-const displayScore = () => {
-    lead.forEach((obj) => score(obj))
+     game = async (url) => {
+        await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ name: 'Belden`s Game' }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            localStorage.setItem('gameID', JSON.stringify(data));
+            console.log(data)
+          });
+      };
+
+     getScore = async (url) => {
+        await fetch(url, {
+          method: 'GET',
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            localStorage.setItem('Scores', JSON.stringify(data));
+          });
+      };
+
+      addValues = async (url, name, score) => {
+        await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json; charset=UTF-8',
+          },
+          body: JSON.stringify({ user: name, score }),
+        })
+          .then((response) => response.json());
+      };
 };
-
-const score = (obj) => {
-    const table = document.querySelector('.results-table');
-    const result = document.createElement('tr');
-    result.insertAdjacentHTML('beforeend',
-    `
-        <tr class="scores">
-            <td>${obj.name}: ${obj.score}</td>
-        </tr>
-    `);
-
-    table.appendChild(result);
-};
-
-document.addEventListener('DOMContentLoaded', displayScore);

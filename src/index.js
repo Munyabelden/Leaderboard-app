@@ -13,12 +13,6 @@ const board = new leaderboard(url);
 const apiRequest = `${url}/scores/`;
 board.getScore(apiRequest);
 
-setTimeout(() => {
-  document.addEventListener('DOMContentLoaded', () => {
-    board.getScore(apiRequest);
-  });
-}, 1000);
-
 submitBtn.addEventListener('click', (e) => {
     e.preventDefault();
     if (!name.value.trim()) {

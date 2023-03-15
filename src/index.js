@@ -7,7 +7,7 @@ const yourScore = document.querySelector('#your-score');
 const submitBtn = document.querySelector('#submit');
 const resetBtn = document.querySelector('#results-btn');
 
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BbPqSVwFE639mX4LkLcu'
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ZOvl7e3tU1LLCEJQRnMH'
 const board = new Game(url);
 const apiRequest = `${url}/scores/`;
 board.getScore(apiRequest);
@@ -36,14 +36,14 @@ submitBtn.addEventListener('click', (e) => {
   resetBtn.addEventListener('click', () => {
     board.getScore(apiRequest);
     setTimeout(() => {
-      if (localStorage.getItem('Score')) {
-        const results = JSON.parse(localStorage.getItem('Score'));
-        const scoreArray = results.result;
-        UI.displayScore(scoreArray);
+        if (localStorage.getItem('Scores')) {
+        const scores = JSON.parse(localStorage.getItem('Scores'));
+        UI.displayScore(scores);
       }
     }, 1000);
-    location.reload();
+     location.reload();
   });
 
-
-document.addEventListener('DOMContentLoaded', UI.displayScore);
+document.addEventListener('DOMContentLoaded', () => {
+  UI.displayScore();
+});

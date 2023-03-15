@@ -14,6 +14,7 @@ export default class Game {
           .then((response) => response.json())
           .then((data) => {
             localStorage.setItem('gameID', JSON.stringify(data));
+            console.log(data)
           });
       };
 

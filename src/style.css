@@ -28,7 +28,7 @@ main {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  margin-left: 60px;
+  justify-content: center;
 }
 
 button,

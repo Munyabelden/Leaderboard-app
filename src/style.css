@@ -5,6 +5,7 @@
   font-family: sans-serif;
   padding: 0;
   margin: 0;
+  color: rgb(28, 66, 106);
 }
 
 a { text-decoration: none; }
@@ -28,6 +29,16 @@ button {
   cursor: pointer;
   width: fit-content;
   padding: 5px 8px;
+  transition: all 250ms ease-in-out;
+  background: #fff;
+  border: 1px solid rgb(28, 35, 62);
+  border-radius: 3px;
+}
+
+button:hover,
+#submit:hover {
+  padding: 7px 11px;
+  cursor: pointer;
 }
 
 .results {
@@ -44,7 +55,7 @@ button {
 
 .results-table {
   display: block;
-  border: 2px solid rgb(22, 23, 31);
+  border: 2px solid rgb(50, 121, 183);
   border-radius: 5px;
   width: fit-content;
   margin: -5px;
@@ -56,7 +67,7 @@ button {
 }
 
 .results-table tr:nth-child(odd) {
-  background: rgb(205, 205, 211);
+  background: rgb(173, 203, 229);
 }
 
 .form-submit h2 {
@@ -73,8 +84,24 @@ button {
 
 .app-form input {
   padding: 6px;
+  border: 1px solid rgb(30, 61, 88);
+  color: rgb(31, 31, 68);
+  border-radius: 3px;
 }
 
 .app-form #submit {
   width: fit-content;
+  transition: all 250ms ease-in-out;
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .app-form {
+    align-items: baseline;
+  }
 }

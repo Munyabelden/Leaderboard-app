@@ -4,14 +4,11 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -62,6 +59,13 @@ Install this project with:
 
 Node.js
 
+### Usage
+
+To run the project, execute the following command:
+
+- npm start
+- Fill in th inputs with your usernanme and score and submit
+- Click submit to see your score
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,11 +98,6 @@ Feel free to check the [issues page](https://github.com/Munyabelden/Leaderboard-
 I would like to thank the Microverse team
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 📝 License <a name="license"></a>
 
